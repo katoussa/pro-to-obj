@@ -1,0 +1,107 @@
+/* ------------- SLIDER ------------- */
+
+/* Mise en page du conteneur du slider */
+.slider {
+  position: relative;
+  padding: 0;
+  width: 1000px;
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+/* Mise en page du slider */
+.slideshow {
+  left: 0;
+  width: 7000px;
+  height: 650px;
+  background-color: rgb(249, 255, 167);
+}
+
+/* Mise en page du contenu du slider */
+.slide {
+  float: left;
+  width: 1000px;
+  height: 650px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mise en page du conteneur d'image */
+.imgSlide {
+  width: 1000px;
+  height: 550px;
+}
+
+/* Mise en page de l'image */
+.imgSlide img {
+  width: 990px;
+  height: 550px;
+  border: 3px solid rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* Mise en page du conteneur de texte */
+.textSlide {
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Mise en page du titre du texte */
+.textSlide h2 {
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+  padding: 5px;
+  margin: 0;
+}
+
+/* buttons */
+.button{
+    width: 250px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .prevBtn,
+  .pauseBtn,
+  .playBtn,
+  .nextBtn{
+    cursor: pointer;
+    z-index: 100;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+
+  .prevBtn:hover,
+  .pauseBtn:hover,
+  .playBtn:hover,
+  .nextBtn:hover{
+    transform: scale(1.1);
+  }
+
+.nextBtn{
+  background: url(https://cdn.pixabay.com/photo/2013/07/12/12/22/forward-145679_960_720.png) no-repeat center;
+  background-size: cover;
+}
+
+.prevBtn{
+  background: url(https://cdn.pixabay.com/photo/2013/07/12/12/22/previous-145675_960_720.png) no-repeat center;
+  background-size: cover;
+}
+
+.pauseBtn{
+  background: url(https://upload.wikimedia.org/wikipedia/commons/5/57/Pause_icon_status.png) no-repeat center;
+  background-size: cover;
+}
+
+.playBtn{
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Next.svg/1024px-Next.svg.png) no-repeat center;
+  background-size: cover;
+} 
+

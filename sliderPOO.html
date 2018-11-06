@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="localiser les vélos à louer sur une carte de Lyon, 
+        visualisez les disponibilités et réservez le votre.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="sliderPOO.css">
+        <title>slider en POO Javascript</title>
+    </head>
+
+    <body>
+        <div id="slider" class="slider" onkeydown="return modularSlider.onKeydown()">
+            <img id="slide" class="slide" src="img/bike-rental-1.jpg"/>
+            <div class="button">
+                <div id="prevBtn" class="prevBtn" onclick="return modularSlider.prev()"></div>
+                <div id="pauseBtn" class="pauseBtn" onclick="return modularSlider.playPause()"></div>
+                <div id="nextBtn" class="nextBtn" onclick="return modularSlider.next()"></div>
+            </div>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+        <script src="sliderPOO.js"></script>
+        <script src="mainPOO.js"></script>
+    </body>
+</html>
+
